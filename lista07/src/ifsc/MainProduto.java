@@ -71,7 +71,9 @@ public class MainProduto {
 			System.out.println("É verdade que é gamer? "+ desktop.getGamer());
 			System.out.println("Fabricante: "+ desktop.getFabricante());
 			System.out.println("Codigo de Barras: "+ desktop.getCodBarras());
-			System.out.println("Peças: "+ desktop.getPecas());
+				for (String peca : desktop.getPecas()) {
+					System.out.println(peca);
+				}
 		}
 		
 		for (Smartphone smartphone : listaSmartphone) {
